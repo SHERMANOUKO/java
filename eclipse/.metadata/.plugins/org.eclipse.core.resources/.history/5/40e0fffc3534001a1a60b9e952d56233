@@ -1,0 +1,25 @@
+abstract class Writer{
+	public abstract void pen();
+	public abstract void pencil();
+}
+
+class Pen extends Writer{
+	public void pen() {
+		System.out.println("Chosen a pen");
+	}
+}
+
+class Pencil extends Writer{
+	public void myPencil() {
+		System.out.println("Chosen a pencil");
+	}
+}
+
+public class AbstractDemoTwo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

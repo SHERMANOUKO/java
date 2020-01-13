@@ -1,0 +1,21 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class ExceptionDemoTwo {
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		// TODO Auto-generated method stub
+		System.out.println("Enter a number");
+		
+		try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in));){
+			int n = Integer.parseInt(br.readLine());
+			
+			System.out.println(n);
+		}
+		catch(Exception e){
+			System.out.println(e);
+		}
+	}
+
+}

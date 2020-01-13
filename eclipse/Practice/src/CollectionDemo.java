@@ -1,0 +1,51 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+
+public class CollectionDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// Collections
+		Collection values = new ArrayList();
+		values.add(4);
+		values.add(6);
+		values.add(9);
+		
+		System.out.println(values);
+		
+		Iterator it = values.iterator();
+		
+		while(it.hasNext()) {
+			System.out.println(it.next());
+		}
+		
+		// lists
+		List<Integer> valuesList = new ArrayList<>();
+		valuesList.add(3);
+		valuesList.add(5);
+		valuesList.add(8);
+		valuesList.add(2, 2);
+		
+		System.out.println(valuesList);
+		
+//		for(int i = 0; i < valuesList.size(); i++){
+//			System.out.println(valuesList.get(i));
+//		}
+		
+		for(Integer o: valuesList) {
+			System.out.println(o);
+		}
+		
+		Collections.sort(valuesList);
+		System.out.println(valuesList);
+		
+		Collections.reverse(valuesList);
+		System.out.println(valuesList);
+		
+	}
+
+}

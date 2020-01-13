@@ -1,0 +1,22 @@
+
+public class ExceptionDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			int a[] = new int[9];
+			a[10] = 9;
+			int i = 9 / 0;
+		}
+		catch(ArithmeticException | ArrayIndexOutOfBoundsException e){
+			System.out.println(e);
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+		finally {
+			System.out.println("Bye");
+		}
+	}
+
+}

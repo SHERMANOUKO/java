@@ -1,0 +1,31 @@
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class SetDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Set<Integer> values = new HashSet<>();
+		values.add(62);
+		values.add(93);
+		values.add(52);
+		values.add(93);
+		
+		for(int i: values) {
+			System.out.println(i);
+		}
+		
+		Set<Integer> treeValues = new TreeSet<>();
+		treeValues.add(6);
+		treeValues.add(9);
+		treeValues.add(5);
+		treeValues.add(9);
+		
+		for(int i: treeValues) {
+			System.out.println(i);
+		}
+		
+	}
+
+}

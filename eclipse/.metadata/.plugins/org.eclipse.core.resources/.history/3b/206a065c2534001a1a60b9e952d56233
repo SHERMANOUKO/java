@@ -1,0 +1,16 @@
+class Calculate{
+	public int add(int x, int y) {
+		return x + y;
+	}
+}
+
+
+public class VarArgsDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Calculate obj = new Calculate();
+		System.out.println(obj.add(1, 2));
+	}
+
+}

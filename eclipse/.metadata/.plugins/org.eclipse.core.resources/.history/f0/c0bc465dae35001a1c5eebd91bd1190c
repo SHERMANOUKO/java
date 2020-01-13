@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
+public class COmparatorDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Integer> values = new ArrayList<>();
+		values.add(201);
+		values.add(403);
+		values.add(106);
+		values.add(918);
+		
+		Comparator<Integer> c = new Comparator<Integer>(){
+			public int compare(Integer i, Integer j) {
+				if(i%10>j%10)
+					return 1;
+				else
+					return -1;
+			}
+		};
+		
+		System.out.println(values);
+	}
+
+}

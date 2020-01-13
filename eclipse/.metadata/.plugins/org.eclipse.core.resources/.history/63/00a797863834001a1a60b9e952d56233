@@ -1,0 +1,38 @@
+class Writer{
+	public void write() {
+		
+	}
+}
+
+class Pen extends Writer{
+	public void write() {
+		System.out.println("Im a pen");
+	}
+	
+}
+
+class Pencil extends Writer{
+	public void write() {
+		System.out.println("Im a pencil");
+	}
+}
+
+class Kit{
+	public void doSomething(Writer p) {
+		p.write();
+	}
+}
+
+public class InterfaceDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Kit k = new Kit();
+		Pen p = new Pen();
+		Pencil pc = new Pencil();
+		
+		k.doSomething(p);
+		k.doSomething(pc);
+	}
+
+}

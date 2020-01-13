@@ -1,0 +1,25 @@
+interface Demo{
+	void abc();
+	
+	default void show() {
+		System.out.println("SHow stuff");
+	}
+
+}
+
+class Implementor implements Demo{
+	public void abc() {
+		System.out.println("abc method");
+	}
+}
+
+public class DefaultDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Demo obj = new Implementor();
+		obj.show();
+		obj.abc();
+	}
+
+}

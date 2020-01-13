@@ -1,0 +1,20 @@
+
+public class OperatorsPractice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n1=6, n2=4;
+		int r1 = n1 - n2;
+		int r2 = n1 + n2;
+		int r3 = n1 * n2;
+		int r4 = n1 / n2;
+		double r5 = (double)n1 / (double)n2;
+		
+		System.out.println(r1);
+		System.out.println(r2);
+		System.out.println(r3);
+		System.out.println(r4);
+		System.out.println(r1);
+	}
+
+}
